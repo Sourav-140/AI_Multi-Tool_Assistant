@@ -83,7 +83,7 @@ router_node ─────── LLM classifies intent (memory-aware)
   ├── summarizer_node ──┼──► reflection_node
   └── qa_node          ──┘         │
                                conditional
-                         ┌──── "retry" → back to tool (max 2×)
+                         ┌──── "retry" ──► back to tool (max 2×)
                          └──── "final" ──► END
 ```
 
